@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-image: url(http://ideatube.science/wp/Z4CD0Ic.jpg)
+}
+
+#weather-info {
+	display: block;
+	text-align: center
+		
+}
+
+button {
+	margin-bottom: 12px;
+	margin-left: 12px;
+	display: block;
+	width: 60px;
+}
+#today {
+	margin: 0 auto;
+}
