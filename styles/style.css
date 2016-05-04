@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 }
 body {
-	background-image: url(http://ideatube.science/wp/Z4CD0Ic.jpg)
 }
 
 #weather-info {
@@ -11,6 +10,10 @@ body {
 		
 }
 
+.overlay {
+    width: 100%;
+    margin: 0 auto;
+}
 button {
 	margin-bottom: 12px;
 	margin-left: 12px;
