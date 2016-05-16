@@ -20,7 +20,7 @@ var weeklyView = function (obj){
 
 	for (var i =0; i<arrayOfObj.length;i++){
 		var day = arrayOfObj[i]
-		var time = day.time 
+		var time = day.time
 		time = time * 1000
 		var d = new Date(time);
 
@@ -46,11 +46,14 @@ ViewConstructor = function(positionObject, viewHTML) {
 	        var latitude = obj.coords.latitude
 	        var longitude = obj.coords.longitude
 	        // console.log(this)
-	        var fullUrl = baseUrl + '/' + latitude + ',' + longitude + '?callback=?' 
+	        var fullUrl = baseUrl + '/' + latitude + ',' + longitude + '?callback=?'
 	        var promise= $.getJSON(fullUrl)
-	        promise.then(this.html.bind(this)) 
+	        promise.then(this.html.bind(this))
 	    }
-	    navigator.geolocation.getCurrentPosition(success.bind(this))
+        var error = function(theError) {
+            console.log(theError)
+        }
+	    navigator.geolocation.getCurrentPosition(success.bind(this), error)
 	}
 }
 
@@ -66,7 +69,7 @@ var todayView = function(obj) {
 }
 
 var today = new ViewConstructor(weatherInfo, todayView)
-var weekly = new ViewConstructor(weatherInfo, weekly)
+var weekly = new ViewConstructor(weatherInfo, weeklyView)
 var hourly = new ViewConstructor(weatherInfo, hourly)
 
 var controller = function () {
@@ -79,7 +82,7 @@ var controller = function () {
 		today.getLocation()
 
 	}
-}	
+}
 
 var changeView = function(event) {
         var buttonEl = event.target
