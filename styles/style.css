@@ -27,6 +27,19 @@ button {
 	width: 60px;
 }
 
+#weather-info {
+     display: block;
+     border: 2px solid crimson;
+     border-radius: 4px;
+     text-align: center;
+}
+
+.weeklyBars {
+    display: inline-block;
+    width: 160px;
+    vertical-align: middle;
+}
+
 #today {
 	margin: 0 auto;
 }
