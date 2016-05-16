@@ -27,7 +27,7 @@ var weeklyView = function (obj){
 		var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 		var date = weekday[d.getDay()]
-		htmlString += '<div class="weeklyBars"><h1 class="maxTemp">'+ formattedDate +'</h1> \
+		htmlString += '<div class="weeklyBars"><h1 class="maxTemp">'+ date +'</h1> \
 					   <h1 class="maxTemp">' + day.apparentTemperatureMax + '</h1>\
 					   <h2 class="minTemp">' + day.apparentTemperatureMin + '</h2>\
 						<h3 class="description">' + day.icon + '</h3></div>'
