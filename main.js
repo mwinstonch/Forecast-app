@@ -18,7 +18,7 @@ var weeklyView = function (obj){
 	var htmlString = ''
 	var arrayOfObj = obj.daily.data
 
-	for (var i =0; i<arrayOfObj.length;i++){
+	for (var i = 0; i<arrayOfObj.length - 1; i++){
 		var day = arrayOfObj[i]
 		var time = day.time
 		time = time * 1000
@@ -32,9 +32,7 @@ var weeklyView = function (obj){
 					   <h2 class="minTemp">' + day.apparentTemperatureMin + '</h2>\
 						<h3 class="description">' + day.icon + '</h3></div>'
 	}
-
 	weatherInfo.innerHTML = htmlString
-
 }
 
 
