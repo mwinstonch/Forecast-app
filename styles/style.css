@@ -35,6 +35,7 @@ button {
 }
 
 .weeklyBars {
+    margin: 10px;
     display: inline-block;
     width: 160px;
     vertical-align: middle;
