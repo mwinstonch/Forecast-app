@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 body {
 }
@@ -8,7 +8,7 @@ body {
 #weather-info {
 	display: block;
 	text-align: center
-		
+			
 }
 
 .overlay {
