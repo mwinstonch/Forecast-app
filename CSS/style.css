@@ -50,6 +50,6 @@ button {
 }
 #today {
 	margin: 0 auto;
-    display: inline-block;
+    display: block;
 
 }
