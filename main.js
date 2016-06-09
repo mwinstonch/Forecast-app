@@ -1,4 +1,3 @@
-
 console.log($)
 
 var weatherInfo = document.querySelector("#weather-info")
@@ -6,6 +5,7 @@ var weatherInfo = document.querySelector("#weather-info")
 var apiKey = "d7b8dba039ce7a0d6f3b304cc2944ae6"
 var baseUrl = "https://api.forecast.io/forecast/" + apiKey
 
+var city = document.querySelector('.city')
 var todayDisplay = document.querySelector('.today')
 var weeklyDisplay = document.querySelector('.weekly')
 var hourly = document.querySelector('.hourly')
@@ -30,7 +30,7 @@ var weeklyView = function (obj){
 		htmlString += '<div class="weeklyBars"><h1 class="day">'+ date +'</h1> \
 					   <h1 class="maxTemp">' + day.apparentTemperatureMax + '</h1>\
 					   <h2 class="minTemp">' + day.apparentTemperatureMin + '</h2>\
-						<h3 class="description">' + day.icon + '</h3></div>'
+						<img src="images/' + day.icon + '.png"class="description"></h3></div>'
 	}
 	weatherInfo.innerHTML = htmlString
 }
