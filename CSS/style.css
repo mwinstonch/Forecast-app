@@ -5,6 +5,9 @@
 body {
 }
 
+.description {
+    width: 64px;
+}
 #weather-info {
 	display: block;
 	text-align: center
