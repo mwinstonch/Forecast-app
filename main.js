@@ -28,9 +28,9 @@ var weeklyView = function (obj){
 
 		var date = weekday[d.getDay()]
 		htmlString += '<div class="weeklyBars"><h1 class="day">'+ date +'</h1> \
-					   <h1 class="maxTemp">' + day.apparentTemperatureMax + '°</h1>\
+					   <h1 class="maxTemp">' + day.TemperatureMax + '°</h1>\
                        <img src="images/' + day.icon + '.png"class="description">\
-                       <h2 class="minTemp">' + day.apparentTemperatureMin + '°</h2>\
+                       <h2 class="minTemp">' + day.TemperatureMin + '°</h2>\
 					   </div>'
 	}
 	weatherInfo.innerHTML = htmlString
@@ -61,8 +61,8 @@ var todayView = function(obj) {
     var htmlString = ''
     var currentTemp = obj.currently
     htmlString += '<div id="today"><h2>Right Now</h2>\
-				    <h1>' + currentTemp.temperature + '&ordmF</h1>\
-				    <h2>' + currentTemp.summary + '</h2>'
+				    <h1>' + currentTemp.temperature + '°</h1>\
+                   <img src="images/' + currentTemp.summary + '.png"class="description">
 
     weatherInfo.innerHTML = htmlString
 }
