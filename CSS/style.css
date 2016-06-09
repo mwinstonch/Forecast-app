@@ -17,6 +17,10 @@ body {
 .noMargBottom {
     margin-bottom: 0;
 }
+
+.mt {
+    margin-top: 4px;
+}
 .overlay {
     width: 100%;
     height: 100vh;
