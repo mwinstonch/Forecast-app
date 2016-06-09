@@ -45,6 +45,11 @@ button {
     vertical-align: middle;
 }
 
+.today-icon {
+     display: inline-block;
+}
 #today {
 	margin: 0 auto;
+    display: inline-block;
+
 }
