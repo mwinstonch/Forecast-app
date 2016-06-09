@@ -19,7 +19,7 @@ body {
 }
 
 .mt {
-    margin-top: 4px;
+    margin-top: 10px;
 }
 .overlay {
     width: 100%;
@@ -31,6 +31,9 @@ body {
     z-index: -1;
 }
 
+.smt {
+    margin-top: 4px; 
+}
 button {
 	margin-bottom: 12px;
 	margin-left: 12px;
