@@ -3,7 +3,7 @@ console.log($)
 var weatherInfo = document.querySelector("#weather-info")
 
 var apiKey = "d7b8dba039ce7a0d6f3b304cc2944ae6"
-var baseUrl = "https://api.forecast.io/forecast/" + apiKey
+var baseUrl = "https://api.forecast.io/forecast/" + apiKey + "?callback=?"
 
 var city = document.querySelector('.city')
 var todayDisplay = document.querySelector('.today')
