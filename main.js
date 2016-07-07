@@ -3,8 +3,7 @@ console.log($)
 var weatherInfo = document.querySelector("#weather-info")
 
 var apiKey = "d7b8dba039ce7a0d6f3b304cc2944ae6"
-var baseUrl = "https://api.forecast.io/forecast/" + apiKey + "?callback=?"
-
+var baseUrl = "https://api.forecast.io/forecast/" + apiKey
 var city = document.querySelector('.city')
 var todayDisplay = document.querySelector('.today')
 var weeklyDisplay = document.querySelector('.weekly')
@@ -61,7 +60,7 @@ var todayView = function(obj) {
     var htmlString = ''
     var currentTemp = obj.currently
     htmlString += '<div id="today"><h2>Right Now</h2>\
-				    <h1 class="noMargBottom mt">' + currentTemp.temperature + '°</h1>\
+				   <h1 class="noMargBottom mt">' + currentTemp.temperature + '°</h1>\
                    <img  src="images/' + currentTemp.icon + '.png" class="description">\
                    <h2 class="smt">' + currentTemp.summary + '</h2></div>'
 
@@ -74,20 +73,17 @@ var hourly = new ViewConstructor(weatherInfo, hourly)
 
 var controller = function () {
 	if(location.hash === '#weekly'){
-
-		weekly.getLocation()
+      weekly.getLocation()
 	}
-
 	else {
-		today.getLocation()
-
+	  today.getLocation()
 	}
 }
 
 var changeView = function(event) {
-        var buttonEl = event.target
-        location.hash = buttonEl.value
-        console.log(location.hash)
+    var buttonEl = event.target
+    location.hash = buttonEl.value
+    console.log(location.hash)
 }
 
 
