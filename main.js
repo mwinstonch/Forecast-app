@@ -37,22 +37,22 @@ var weeklyView = function (obj){
 
 
 ViewConstructor = function(positionObject, viewHTML) {
-	this.el = positionObject
-	this.html = viewHTML
-	this.getLocation = function(view) {
-	    var success = function(obj) {
-	        var latitude = obj.coords.latitude
-	        var longitude = obj.coords.longitude
-	        // console.log(this)
-	        var fullUrl = baseUrl + '/' + latitude + ',' + longitude + '?callback=?'
-	        var promise= $.getJSON(fullUrl)
-	        promise.then(this.html.bind(this))
-	    }
-        var error = function(theError) {
-            console.log(theError)
-        }
-	    navigator.geolocation.getCurrentPosition(success.bind(this), error)
-	}
+  this.el = positionObject
+  this.html = viewHTML
+  this.getLocation = function(view) {
+    var success = function(obj) {
+	  var latitude = obj.coords.latitude
+	  var longitude = obj.coords.longitude
+	  // console.log(this)
+	  var fullUrl = baseUrl + '/' + latitude + ',' + longitude + '?callback=?'
+	    var promise= $.getJSON(fullUrl)
+	    promise.then(this.html.bind(this))
+	  }
+    var error = function(theError) {
+      console.log(theError)
+    }
+    navigator.geolocation.getCurrentPosition(success.bind(this), error)
+  }
 }
 
 var todayView = function(obj) {
