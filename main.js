@@ -56,15 +56,15 @@ ViewConstructor = function(positionObject, viewHTML) {
 }
 
 var todayView = function(obj) {
-	// console.log(obj)
-    var htmlString = ''
-    var currentTemp = obj.currently
-    htmlString += '<div id="today"><h2>Right Now</h2>\
-				   <h1 class="noMargBottom mt">' + currentTemp.temperature + '°</h1>\
-                   <img  src="images/' + currentTemp.icon + '.png" class="description">\
-                   <h2 class="smt">' + currentTemp.summary + '</h2></div>'
+  // console.log(obj)
+  var htmlString = ''
+  var currentTemp = obj.currently
+  htmlString += '<div id="today"><h2>Right Now</h2>\
+			   <h1 class="noMargBottom mt">' + currentTemp.temperature + '°</h1>\
+               <img  src="images/' + currentTemp.icon + '.png" class="description">\
+               <h2 class="smt">' + currentTemp.summary + '</h2></div>'
 
-    weatherInfo.innerHTML = htmlString
+  weatherInfo.innerHTML = htmlString
 }
 
 var today = new ViewConstructor(weatherInfo, todayView)
