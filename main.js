@@ -12,6 +12,15 @@ var hourly = document.querySelector('.hourly')
 var latitude = ''
 var longitude = ''
 
+function getQuery(keyEvent) {
+    var query = keyEvent.srcElement
+    if (keyEvent.keyCode === 13) {
+        var userCity = query.value
+        location.hash = userCity
+        query.value = ''
+    }
+}
+
 var weeklyView = function (obj){
 	console.log(obj)
 	var htmlString = ''
@@ -72,17 +81,16 @@ var weekly = new ViewConstructor(weatherInfo, weeklyView)
 var hourly = new ViewConstructor(weatherInfo, hourly)
 
 var controller = function () {
-	if(location.hash === '#weekly'){
-      weekly.getLocation()
+	if(location.hash === ''){
+      window.location.hash = "Houston, TX"
 	}
 	else {
-	  today.getLocation()
+      console.log("controller working")
 	}
 }
 
 var changeView = function(event) {
     var buttonEl = event.target
-    location.hash = buttonEl.value
     console.log(location.hash)
 }
 
