@@ -48,11 +48,19 @@ button {
 	width: 60px;
 }
 
-#weather-info {
+.weatherCity {
+    text-align: center;
+    border-right: solid rgb(32, 64, 87);
+    display: inline-block;
+    margin-left: 5%;
+    padding-right: 5%;
+}
+
+.weather-info {
      display: block;
-     border: 2px solid crimson;
+     border: 2px solid #b98c86;;
      border-radius: 4px;
-     text-align: center;
+     text-align: left;
 }
 
 .weeklyBars {
