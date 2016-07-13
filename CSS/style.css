@@ -26,6 +26,7 @@ body {
 }
 
 .forecastWeather {
+    display: inline-block;
     border-left: 2px solid black;
     padding-left: 17px;
     padding-right: 17px;
