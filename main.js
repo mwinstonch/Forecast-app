@@ -22,7 +22,18 @@ function getQuery(keyEvent) {
 }
 
 var showWeather = function(jsonData) {
-  console.log(jsonData)
+    console.log(jsonData)
+    var day = new Date()
+    var today = day.getDay()
+    var cityDiv = document.querySelector(".weatherCity")
+    var forecastDiv = document.querySelector(".forecastWeather")
+    cityDiv.innerHTML = ''
+    forecastDiv.innerHTML = ''
+    cityDiv.innerHTML = '<div class="currentTemperature"><h1>' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
+                        <img class="mainIcon" src="images/' + jsonData.currently.icon + '.svg"></div>\
+                        <div class="daySummary"><p class="weekday">' + weekObject[today] + '</p>' +
+                        //'<div class="iconDiv">\
+                        '<p>' + jsonData.currently.summary + '</p></div>'
 }
 
 var citySearch = document.querySelector(".citySearch")
