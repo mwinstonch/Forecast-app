@@ -37,6 +37,7 @@ var showWeather = function(jsonData) {
     var today = day.getDay()
     var cityDiv = document.querySelector(".weatherCity")
     var forecastDiv = document.querySelector(".forecastWeather")
+    cityDiv.style.marginLeft= "55px"
     forecastDiv.innerHTML = ''
     cityDiv.innerHTML = ''
     cityDiv.innerHTML = '<div class=""><h1 class="currentTemperature">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
