@@ -23,8 +23,6 @@ body {
 
 .currentTemperature {
     margin-bottom: 0px;
-    display: inline-block;
-    border-left: 2px solid;
 }
 
 .forecastWeather {
