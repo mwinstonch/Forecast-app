@@ -21,7 +21,7 @@ function getQuery(keyEvent) {
     }
 }
 
-var weekObject = {
+var week= {
         0: "Sunday",
         1: "Monday",
         2: "Tuesday",
@@ -40,7 +40,7 @@ var showWeather = function(jsonData) {
     cityDiv.innerHTML = ''
     cityDiv.innerHTML = '<div class=""><h1 class="currentTemperature">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
                         <img class="mainIcon" src="images/' + jsonData.currently.icon + '.png"></div>\
-                        <div class="daySummary"><h3 class="weekday">' + weekObject[today] + '</h3>' +
+                        <div class="daySummary"><h3 class="weekday">' + week[today] + '</h3>' +
                         //'<div class="iconDiv">\
                         '<h3>' + jsonData.currently.summary + '</h3></div>'
 }
