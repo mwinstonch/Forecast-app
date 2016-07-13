@@ -5,6 +5,10 @@
 body {
 }
 
+.city {
+    font-size: 18px;
+}
+
 .description {
     width: 64px;
 }
