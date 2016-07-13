@@ -53,14 +53,13 @@ var showWeather = function(jsonData) {
         forecastDiv.innerHTML = ''
         forecastDiv.innerHTML += '<div class="currentForecast">' +
                                 '<p>Feels like: ' + parseInt(jsonData.currently.apparentTemperature) + '&deg;F</p>' +
-                                '<p>Wind: ' + jsonData.currently.windSpeed + ' mph</p>' +
                                 '<p>Precipitation: ' + parseInt((jsonData.currently.precipProbability)*100) + '%</p>' +
+                                '<p>Wind: ' + jsonData.currently.windSpeed + ' mph</p>' +
                                 '<p>Humidity: ' + parseInt((jsonData.currently.humidity)*100) + '%</p>' +
                                 '<p>Dew Point: ' + parseInt(jsonData.currently.dewPoint) + '&deg;F</p>' +
-                                '<p>Pressure: ' + jsonData.currently.pressure + ' in.</p>' +
                                 '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
                                 '</div>'
-        cityDiv.style = weatherStyle
+        cityDiv.style.marginBottom = 0
     }
         todayDisplay.addEventListener("click", currentForecast)
     weeklyDisplay.addEventListener("click", changeView)
