@@ -21,6 +21,10 @@ function getQuery(keyEvent) {
     }
 }
 
+var showWeather = function(jsonData) {
+  console.log(jsonData)
+}
+
 var citySearch = document.querySelector(".citySearch")
 citySearch.addEventListener('keydown',getQuery)
 
@@ -84,11 +88,28 @@ var weekly = new ViewConstructor(weatherInfo, weeklyView)
 var hourly = new ViewConstructor(weatherInfo, hourly)
 
 var controller = function () {
+
 	if(location.hash === ''){
       window.location.hash = "Houston, TX"
 	}
+
 	else {
       console.log("controller working")
+      var newQuery = location.hash.substring(1)
+        city.innerHTML = '<p>' + newQuery + '</p>'
+        var geoLocationApiKey = 'AIzaSyDoPQ0h-D869qcL-uF6rJBG21cgTfKVy8k'
+        var geoLocator = 'https://maps.googleapis.com/maps/api/geocode/json?address='
+        var getLocation = $.getJSON(geoLocator + newQuery)
+        function showLocation (jsonData) {
+            var location = (jsonData.results[0].geometry.location)
+            var queryLat = location.lat
+            var queryLng = location.lng
+            console.log("Longitude: " + queryLng)
+            console.log("Lat: " + queryLat)
+            var fullUrl = $.getJSON(baseUrl+'/'+queryLat+','+queryLng+chromeSecurityCode)
+            fullUrl.then(showWeather)
+        }
+        getLocation.then(showLocation)
 	}
 }
 
