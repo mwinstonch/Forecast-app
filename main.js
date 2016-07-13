@@ -60,6 +60,11 @@ var showWeather = function(jsonData) {
                                 '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
                                 '</div>'
         cityDiv.style.marginBottom = 0
+          document.querySelector("currentTemperature").style.margin = 0
+          document.querySelector("mainIcon").style.margin = 0
+          document.querySelector("daySummary").style.margin = 0
+          document.querySelector("weekday").style.margin = 0
+          document.querySelector("overcast").style.margin = 0
     }
         todayDisplay.addEventListener("click", currentForecast)
     weeklyDisplay.addEventListener("click", changeView)
