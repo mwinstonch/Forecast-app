@@ -79,8 +79,8 @@ button {
 .weatherCity {
     text-align: center;
     display: inline-block;
-    margin-left: 20px;
-    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .weather-info {
