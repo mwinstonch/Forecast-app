@@ -56,13 +56,13 @@ button {
 
 .weatherCity {
     text-align: center;
-    border-right: solid rgb(32, 64, 87);
     display: block;
     margin-left: 5%;
     padding-right: 5%;
 }
 
 .weather-info {
+     background: rgba(158, 158, 158, 0.18);
      display: inline-block;
      border: 2px solid #b7a4a8;
      border-radius: 4px;
