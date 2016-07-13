@@ -22,7 +22,7 @@ function getQuery(keyEvent) {
 }
 
 var citySearch = document.querySelector(".citySearch")
-citySearch..addEventListener('keydown',getQuery)
+citySearch.addEventListener('keydown',getQuery)
 
 var weeklyView = function (obj){
 	console.log(obj)
