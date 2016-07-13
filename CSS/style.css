@@ -9,6 +9,10 @@ body {
     font-size: 31px;
 }
 
+.citySearch {
+    margin-bottom: 10px;
+}
+
 .description {
     width: 64px;
 }
@@ -19,11 +23,6 @@ body {
 
 .weather {
     text-align: center;
-}
-#weather-info {
-	display: block;
-	text-align: center
-			
 }
 
 .noMargBottom {
@@ -58,7 +57,7 @@ button {
 .weatherCity {
     text-align: center;
     border-right: solid rgb(32, 64, 87);
-    display: inline-block;
+    display: block;
     margin-left: 5%;
     padding-right: 5%;
 }
@@ -67,6 +66,7 @@ button {
      display: inline-block;
      border: 2px solid #b7a4a8;
      border-radius: 4px;
+     width: 30%;
      text-align: left;
 }
 
