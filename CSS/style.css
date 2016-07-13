@@ -17,6 +17,9 @@ body {
     margin-bottom: 0px;
 }
 
+.weather {
+    text-align: center;
+}
 #weather-info {
 	display: block;
 	text-align: center
