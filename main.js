@@ -58,15 +58,9 @@ var showWeather = function(jsonData) {
                                 '<p>Dew Point: ' + parseInt(jsonData.currently.dewPoint) + '&deg;F</p>' +
                                 '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
                                 '</div>'
-        cityDiv.style.marginBottom = 0
-          var currentTemp = document.querySelector("currentTemperature")
-          currentTemp.style.margin = 0
-          document.querySelector("mainIcon").style.margin = 0
-          document.querySelector("daySummary").style.margin = 0
-          document.querySelector("weekday").style.margin = 0
-          document.querySelector("overcast").style.margin = 0
+        cityDiv.style.marginLeft= "30px"
     }
-        todayDisplay.addEventListener("click", currentForecast)
+    todayDisplay.addEventListener("click", currentForecast)
     weeklyDisplay.addEventListener("click", changeView)
 }
 
