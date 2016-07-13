@@ -116,7 +116,7 @@ var controller = function () {
 	else {
       console.log("controller working")
       var newQuery = location.hash.substring(1)
-        city.innerHTML = '<p>' + newQuery + '</p>'
+        city.innerHTML = newQuery
         var geoLocationApiKey = 'AIzaSyDoPQ0h-D869qcL-uF6rJBG21cgTfKVy8k'
         var geoLocator = 'https://maps.googleapis.com/maps/api/geocode/json?address='
         var getLocation = $.getJSON(geoLocator + newQuery)
