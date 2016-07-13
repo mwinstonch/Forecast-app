@@ -25,6 +25,10 @@ body {
     text-align: center;
 }
 
+.mainIcon {
+    width: 128px;
+}
+
 .noMargBottom {
     margin-bottom: 0;
 }
