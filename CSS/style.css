@@ -64,7 +64,7 @@ button {
 }
 
 .weather-info {
-     display: block;
+     display: inline-block;
      border: 2px solid #b7a4a8;
      border-radius: 4px;
      text-align: left;
