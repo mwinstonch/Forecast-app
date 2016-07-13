@@ -49,7 +49,6 @@ var showWeather = function(jsonData) {
             marginBottom: 0,
             marginTop: 0
         }
-
         forecastDiv.innerHTML = ''
         forecastDiv.innerHTML += '<div class="currentForecast">' +
                                 '<p>Feels like: ' + parseInt(jsonData.currently.apparentTemperature) + '&deg;F</p>' +
@@ -60,7 +59,7 @@ var showWeather = function(jsonData) {
                                 '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
                                 '</div>'
         cityDiv.style.marginBottom = 0
-          document.querySelector("currentTemperature").style.margin = 0
+          document.querySelector("currentTemperature")style.margin = 0
           document.querySelector("mainIcon").style.margin = 0
           document.querySelector("daySummary").style.margin = 0
           document.querySelector("weekday").style.margin = 0
