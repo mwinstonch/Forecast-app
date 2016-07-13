@@ -38,11 +38,11 @@ var showWeather = function(jsonData) {
     var cityDiv = document.querySelector(".weatherCity")
     var forecastDiv = document.querySelector(".forecastWeather")
     cityDiv.innerHTML = ''
-    cityDiv.innerHTML = '<div class="currentTemperature"><h1>' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
+    cityDiv.innerHTML = '<div class=""><h1 class="currentTemperature">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
                         <img class="mainIcon" src="images/' + jsonData.currently.icon + '.png"></div>\
-                        <div class="daySummary"><p class="weekday">' + weekObject[today] + '</p>' +
+                        <div class="daySummary"><h3 class="weekday">' + weekObject[today] + '</h3>' +
                         //'<div class="iconDiv">\
-                        '<p>' + jsonData.currently.summary + '</p></div>'
+                        '<h3>' + jsonData.currently.summary + '</h3></div>'
 }
 
 var citySearch = document.querySelector(".citySearch")
