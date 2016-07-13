@@ -60,9 +60,9 @@ var showWeather = function(jsonData) {
                                 '<p>Pressure: ' + jsonData.currently.pressure + ' in.</p>' +
                                 '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
                                 '</div>'
+        cityDiv.style = weatherStyle
     }
-    cityDiv.style = weatherStyle
-    todayDisplay.addEventListener("click", currentForecast)
+        todayDisplay.addEventListener("click", currentForecast)
     weeklyDisplay.addEventListener("click", changeView)
 }
 
