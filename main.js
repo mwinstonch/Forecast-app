@@ -27,7 +27,7 @@ var showWeather = function(jsonData) {
     var today = day.getDay()
     var cityDiv = document.querySelector(".weatherCity")
     var forecastDiv = document.querySelector(".forecastWeather")
-    forecastDiv.innerHTML = ''
+    cityDiv.innerHTML = ''
     cityDiv.innerHTML = '<div class="currentTemperature"><h1>' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
                         <img class="mainIcon" src="images/' + jsonData.currently.icon + '.svg"></div>\
                         <div class="daySummary"><p class="weekday">' + weekObject[today] + '</p>' +
