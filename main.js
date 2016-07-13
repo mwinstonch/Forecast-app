@@ -106,7 +106,7 @@ var controller = function () {
             var queryLng = location.lng
             console.log("Longitude: " + queryLng)
             console.log("Lat: " + queryLat)
-            var fullUrl = $.getJSON(baseUrl+'/'+queryLat+','+queryLng+chromeSecurityCode)
+            var fullUrl = $.getJSON(baseUrl+'/'+queryLat+','+queryLng+ '?callback=?')
             fullUrl.then(showWeather)
         }
         getLocation.then(showLocation)
