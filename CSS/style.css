@@ -44,7 +44,7 @@ body {
 }
 
 .overcast {
-    margin-bottom: 8;
+    margin: 0;
 }
 
 .noMargBottom {
@@ -74,6 +74,10 @@ button {
 	margin-left: 12px;
 	display: block;
 	width: 104px;
+}
+
+.weekday {
+    margin: 0;
 }
 
 .weatherCity {
