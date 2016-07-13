@@ -45,6 +45,11 @@ var showWeather = function(jsonData) {
                         '<h3 class="overcast">' + jsonData.currently.summary + '</h3></div>'
 
     function currentForecast () {
+        weatherStyle = {
+            margin-bottom: 0,
+            margin-top: 0
+        }
+
         forecastDiv.innerHTML = ''
         forecastDiv.innerHTML += '<div class="currentForecast">' +
                                 '<p>Feels like: ' + parseInt(jsonData.currently.apparentTemperature) + '&deg;F</p>' +
@@ -56,7 +61,7 @@ var showWeather = function(jsonData) {
                                 '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
                                 '</div>'
     }
-
+    weather-info.style = weatherStyle
     todayDisplay.addEventListener("click", currentForecast)
     weeklyDisplay.addEventListener("click", changeView)
 }
