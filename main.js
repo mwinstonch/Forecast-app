@@ -43,7 +43,24 @@ var showWeather = function(jsonData) {
                         <div class="daySummary"><h3 class="weekday">' + week[today] + '</h3>' +
                         //'<div class="iconDiv">\
                         '<h3>' + jsonData.currently.summary + '</h3></div>'
+
+    function currentForecast () {
+        forecastDiv.innerHTML = ''
+        forecastDiv.innerHTML += '<div class="currentForecast">' +
+                                '<p>Feels like: ' + parseInt(jsonData.currently.apparentTemperature) + '&deg;F</p>' +
+                                '<p>Wind: ' + jsonData.currently.windSpeed + ' mph</p>' +
+                                '<p>Humidity: ' + parseInt((jsonData.currently.humidity)*100) + ' %</p>' +
+                                '<p>Precipitation: ' + parseInt((jsonData.currently.precipProbability)*100) + '%</p>' +
+                                '<p>Dew Point: ' + parseInt(jsonData.currently.dewPoint) + '&deg;F</p>' +
+                                '<p>Pressure: ' + jsonData.currently.pressure + ' in.</p>' +
+                                '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
+                                '</div>'
+    }
+
+    todayDisplay.addEventListener("click", currentForecast)
+    weeklyDisplay.addEventListener("click", changeView)
 }
+
 
 var citySearch = document.querySelector(".citySearch")
 citySearch.addEventListener('keydown',getQuery)
@@ -139,7 +156,5 @@ var changeView = function(event) {
 
 window.addEventListener("hashchange", controller)
 
-todayDisplay.addEventListener("click", changeView)
-weeklyDisplay.addEventListener("click", changeView)
 
 controller()
