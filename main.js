@@ -16,10 +16,13 @@ function getQuery(keyEvent) {
     var query = keyEvent.srcElement
     if (keyEvent.keyCode === 13) {
         var userCity = query.value
-        location.hash = userCity
+        window.location.hash = userCity
         query.value = ''
     }
 }
+
+var citySearch = document.querySelector(".citySearch")
+citySearch.findCityInput.addEventListener('keydown',getQuery)
 
 var weeklyView = function (obj){
 	console.log(obj)
@@ -90,8 +93,6 @@ var controller = function () {
 }
 
 var changeView = function(event) {
-    var buttonEl = event.target
-    console.log(location.hash)
 }
 
 
