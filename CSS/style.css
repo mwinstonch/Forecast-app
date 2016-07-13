@@ -13,12 +13,24 @@ body {
     margin-bottom: 10px;
 }
 
+.currentTemperature {
+    margin-top: 0;
+}
+
 .description {
     width: 64px;
 }
 
 .currentTemperature {
     margin-bottom: 0px;
+    display: inline-block;
+    border-left: 2px solid;
+}
+
+.forecastWeather {
+    border-left: 2px solid black;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .weather {
@@ -27,6 +39,10 @@ body {
 
 .mainIcon {
     width: 128px;
+}
+
+.overcast {
+    margin-bottom: 0;
 }
 
 .noMargBottom {
@@ -61,8 +77,8 @@ button {
 .weatherCity {
     text-align: center;
     display: block;
-    margin-left: 5%;
-    padding-right: 5%;
+    margin-left: 20px;
+    padding-right: 20px;
 }
 
 .weather-info {
@@ -70,7 +86,6 @@ button {
      display: inline-block;
      border: 2px solid #b7a4a8;
      border-radius: 4px;
-     width: 30%;
      text-align: left;
 }
 

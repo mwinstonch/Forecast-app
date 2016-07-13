@@ -42,15 +42,15 @@ var showWeather = function(jsonData) {
                         <img class="mainIcon" src="images/' + jsonData.currently.icon + '.png"></div>\
                         <div class="daySummary"><h3 class="weekday">' + week[today] + '</h3>' +
                         //'<div class="iconDiv">\
-                        '<h3>' + jsonData.currently.summary + '</h3></div>'
+                        '<h3 class="overcast">' + jsonData.currently.summary + '</h3></div>'
 
     function currentForecast () {
         forecastDiv.innerHTML = ''
         forecastDiv.innerHTML += '<div class="currentForecast">' +
                                 '<p>Feels like: ' + parseInt(jsonData.currently.apparentTemperature) + '&deg;F</p>' +
                                 '<p>Wind: ' + jsonData.currently.windSpeed + ' mph</p>' +
-                                '<p>Humidity: ' + parseInt((jsonData.currently.humidity)*100) + ' %</p>' +
                                 '<p>Precipitation: ' + parseInt((jsonData.currently.precipProbability)*100) + '%</p>' +
+                                '<p>Humidity: ' + parseInt((jsonData.currently.humidity)*100) + '%</p>' +
                                 '<p>Dew Point: ' + parseInt(jsonData.currently.dewPoint) + '&deg;F</p>' +
                                 '<p>Pressure: ' + jsonData.currently.pressure + ' in.</p>' +
                                 '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
