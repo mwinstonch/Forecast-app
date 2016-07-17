@@ -45,7 +45,6 @@ var showWeather = function(jsonData) {
                         <div class="daySummary"><h3 class="weekday">' + week[today] + '</h3>' +
                         //'<div class="iconDiv">\
                         '<h3 class="overcast">' + jsonData.currently.summary + '</h3></div>'
-
     function currentForecast () {
         weatherStyle = {
             marginBottom: 0,
