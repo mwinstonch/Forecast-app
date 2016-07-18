@@ -11,6 +11,11 @@ body {
 
 .citySearch {
     margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+citySearch:focus {
+    outline: none;
 }
 
 .currentTemperature {
