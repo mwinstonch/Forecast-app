@@ -90,10 +90,11 @@ button {
 }
 
 .weather-info {
-     border: 3px solid #98bed4;
+     border: rgb(107, 151, 177);
      display: inline-block;
      border-radius: 4px;
      text-align: left;
+     background: rgba(0, 14, 97, 0.11);
 }
 
 .weeklyBars {
