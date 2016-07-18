@@ -14,7 +14,7 @@ body {
     border: 1px solid black;
 }
 
-citySearch:focus {
+.citySearch:focus {
     outline: none;
 }
 
