@@ -108,11 +108,9 @@ button {
      display: inline-block;
 }
 
-#today {
-	margin: 0 auto;
-    display: block;
+.today {
 }
 
-#today:hover {
+.today:hover {
     background: rgba(255, 99, 71, 0.42);
 }
