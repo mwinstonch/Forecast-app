@@ -90,7 +90,7 @@ button {
 }
 
 .weather-info {
-     border: rgb(107, 151, 177);
+     border: 3px solid rgb(107, 151, 177);
      display: inline-block;
      border-radius: 4px;
      text-align: left;
