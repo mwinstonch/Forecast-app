@@ -106,6 +106,10 @@ button {
     vertical-align: middle;
 }
 
+.weekly:hover {
+background: rgb(70, 115, 157);
+}
+
 .today-icon {
      display: inline-block;
 }
