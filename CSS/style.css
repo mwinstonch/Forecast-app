@@ -70,11 +70,12 @@ body {
 }
 
 button {
-	margin-bottom: 12px;
-	margin-left: 12px;
-	display: block;
-	width: 104px;
-}
+    margin-top: 1%;
+    border: 2px solid #446379;
+    margin-left: 1%;
+    display: block;
+    width: 104px;
+    background: rgba(255, 99, 71, 0.13);}
 
 .weekday {
     margin: 0;
