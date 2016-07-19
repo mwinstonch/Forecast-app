@@ -9,8 +9,12 @@ body {
 }
 
 .citySearch {
+    width: 22%;
     margin-bottom: 10px;
-    border: 1px solid black;
+    border: 1px solid #283951;
+    height: 22px;
+    border-radius: 4px;
+    background: rgba(255, 99, 71, 0.13);
 }
 
 .citySearch:focus {
