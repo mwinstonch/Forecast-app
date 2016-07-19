@@ -41,7 +41,7 @@ var showWeather = function(jsonData) {
     forecastDiv.innerHTML = ''
     cityDiv.innerHTML = ''
     cityDiv.innerHTML = '<div class=""><h1 class="currentTemperature">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
-                        <img class="mainIcon" src="images/' + jsonData.currently.icon + '.png"></div>\
+                        <img class="mainIcon" src="images/' + jsonData.currently.icon + 'gif"></div>\
                         <div class="daySummary"><h3 class="weekday">' + week[today] + '</h3>' +
                         //'<div class="iconDiv">\
                         '<h3 class="overcast">' + jsonData.currently.summary + '</h3></div>'
@@ -85,7 +85,7 @@ var weeklyView = function (obj){
 		var date = weekday[d.getDay()]
 		htmlString += '<div class="weeklyBars"><h1 class="day">'+ date +'</h1> \
 					   <h1 class="maxTemp">' + day.temperatureMax + '°</h1>\
-                       <img src="images/' + day.icon + '.png"class="description">\
+                       <img src="images/' + day.icon + 'gif"class="description">\
                        <h2 class="minTemp">' + day.temperatureMin + '°</h2>\
 					   </div>'
 	}
