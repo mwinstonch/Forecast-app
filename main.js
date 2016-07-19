@@ -118,7 +118,7 @@ var todayView = function(obj) {
   var currentTemp = obj.currently
   htmlString += '<div id="today"><h2>Right Now</h2>\
 			   <h1 class="noMargBottom mt">' + currentTemp.temperature + '°</h1>\
-               <img  src="images/' + currentTemp.icon + '.png" class="description">\
+               <img  src="images/' + currentTemp.icon + '.gif" class="description">\
                <h2 class="smt">' + currentTemp.summary + '</h2></div>'
 
   weatherInfo.innerHTML = htmlString
