@@ -79,8 +79,10 @@ body {
 
 button {
     width: 18%;
+    border-radius: 8px;
     transition: .38s;
     border-radius: 2px;
+    height: 30px;
     margin-top: 1%;
     border: 2px solid #446379;
     margin-left: 1%;
