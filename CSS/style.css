@@ -23,15 +23,13 @@ body {
 
 .currentTemp {
     margin-top: 0;
+    margin-bottom: 0px;
 }
 
 .description {
     width: 64px;
 }
 
-.currentTemperature {
-    margin-bottom: 0px;
-}
 
 .currentForecast {
    }
@@ -78,7 +76,7 @@ body {
 }
 
 button {
-    width: 22%;
+    width: 20%;
     border-radius: 8px;
     transition: .38s;
     border-radius: 13px;
