@@ -5,6 +5,9 @@
 body {
 }
 
+p {
+    line-height: 30px;
+}
 .city {
     font-size: 31px;
 }
