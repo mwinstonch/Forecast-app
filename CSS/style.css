@@ -8,6 +8,9 @@ body {
 .city {
     font-size: 31px;
 }
+input[type='text'] {
+    font-size: 24px; font-family: monospace;
+}
 
 .citySearch {
     width: 22%;
