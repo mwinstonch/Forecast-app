@@ -21,7 +21,7 @@ body {
     outline: none;
 }
 
-.currentTemperature {
+.currentTemp {
     margin-top: 0;
 }
 
@@ -51,7 +51,7 @@ body {
     width: 128px;
 }
 
-.overcast {
+.summary {
     margin: 0;
 }
 
