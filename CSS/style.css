@@ -117,8 +117,8 @@ button {
 }
 
 .weekly:hover {
-background: rgb(70, 115, 157);
-}
+    background:rgba(46, 126, 202, 0.26);
+ }
 
 .today-icon {
      display: inline-block;
