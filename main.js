@@ -40,11 +40,10 @@ var showWeather = function(jsonData) {
     cityDiv.style.marginLeft= "55px"
     forecastDiv.innerHTML = ''
     cityDiv.innerHTML = ''
-    cityDiv.innerHTML = '<div class=""><h1 class="currentTemperature">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
-                        <img class="mainIcon" src="images/' + jsonData.currently.icon + '.png"></div>\
-                        <div class="daySummary"><h3 class="weekday">' + week[today] + '</h3>' +
-                        //'<div class="iconDiv">\
-                        '<h3 class="overcast">' + jsonData.currently.summary + '</h3></div>'
+    cityDiv.innerHTML = '<div class=""><h1 class="currentTemp">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
+        <img class="weatherIcon" src="images/' + jsonData.currently.icon + '.png"></div>\
+        <div class="daySummary"><h3 class="weekday">' + week[today] + '</h3>' +
+        '<h3 class="summary">' + jsonData.currently.summary + '</h3></div>'
     function currentForecast () {
         weatherStyle = {
             marginBottom: 0,
@@ -52,13 +51,13 @@ var showWeather = function(jsonData) {
         }
         forecastDiv.innerHTML = ''
         forecastDiv.innerHTML += '<div class="currentForecast">' +
-                                '<p>Feels like: ' + parseInt(jsonData.currently.apparentTemperature) + '&deg;F</p>' +
-                                '<p>Precipitation: ' + parseInt((jsonData.currently.precipProbability)*100) + '%</p>' +
-                                '<p>Wind: ' + jsonData.currently.windSpeed + ' mph</p>' +
-                                '<p>Humidity: ' + parseInt((jsonData.currently.humidity)*100) + '%</p>' +
-                                '<p>Dew Point: ' + parseInt(jsonData.currently.dewPoint) + '&deg;F</p>' +
-                                '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
-                                '</div>'
+            '<p>Feels like: ' + parseInt(jsonData.currently.apparentTemperature) + '&deg;F</p>' +
+            '<p>Precipitation: ' + parseInt((jsonData.currently.precipProbability)*100) + '%</p>' +
+            '<p>Wind: ' + jsonData.currently.windSpeed + ' mph</p>' +
+            '<p>Humidity: ' + parseInt((jsonData.currently.humidity)*100) + '%</p>' +
+            '<p>Dew Point: ' + parseInt(jsonData.currently.dewPoint) + '&deg;F</p>' +
+            '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
+            '</div>'
         cityDiv.style.marginLeft= "30px"
     }
     todayDisplay.addEventListener("click", currentForecast)
