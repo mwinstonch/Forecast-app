@@ -38,6 +38,7 @@ var showWeather = function(jsonData) {
     var weatherView = document.querySelector(".weatherView")
     var forecastDiv = document.querySelector(".forecastWeather")
     forecastDiv.innerHTML = ''
+    weatherView.style.marginLeft = "55px"
     weatherView.innerHTML = ''
     weatherView.innerHTML = '<div class=""><h1 class="currentTemp">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
         <img class="weatherIcon" src="images/' + jsonData.currently.icon + '.png"></div>\
@@ -57,7 +58,7 @@ var showWeather = function(jsonData) {
             '<p>Dew Point: ' + parseInt(jsonData.currently.dewPoint) + '&deg;F</p>' +
             '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
             '</div>'
-        cityDiv.style.marginLeft= "30px"
+        weatherView.style.marginLeft= "30px"
     }
     todayDisplay.addEventListener("click", currentForecast)
     weeklyDisplay.addEventListener("click", weeklyView)
