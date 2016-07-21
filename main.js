@@ -35,12 +35,12 @@ var showWeather = function(jsonData) {
     console.log(jsonData)
     var day = new Date()
     var today = day.getDay()
-    var cityDiv = document.querySelector(".weatherCity")
+    var view = document.querySelector(".weatherView")
     var forecastDiv = document.querySelector(".forecastWeather")
-    cityDiv.style.marginLeft= "55px"
+    view.style.marginLeft= "55px"
     forecastDiv.innerHTML = ''
-    cityDiv.innerHTML = ''
-    cityDiv.innerHTML = '<div class=""><h1 class="currentTemp">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
+    view.innerHTML = ''
+    view.innerHTML = '<div class=""><h1 class="currentTemp">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
         <img class="weatherIcon" src="images/' + jsonData.currently.icon + '.png"></div>\
         <div class="daySummary"><h3 class="weekday">' + week[today] + '</h3>' +
         '<h3 class="summary">' + jsonData.currently.summary + '</h3></div>'
