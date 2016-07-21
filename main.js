@@ -63,6 +63,8 @@ var showWeather = function(jsonData) {
             '<p>Visibility: ' + jsonData.currently.visibility + ' mi.</p>' +
             '</div>'
         weatherView.style.marginLeft= "30px"
+        weatherView.style.display= "block"
+        forecastDiv
     }
     todayDisplay.addEventListener("click", currentForecast)
     weeklyDisplay.addEventListener("click", weeklyView)
@@ -89,6 +91,8 @@ var showWeather = function(jsonData) {
         }
     weatherView.innerHTML = ''
 	forecastDiv.innerHTML = htmlString
+    weatherView.style.marginLeft= "30px"
+    weatherView.style.display= "block"
     }
 
 }
