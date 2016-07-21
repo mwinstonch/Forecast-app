@@ -65,6 +65,14 @@ input[type='text'] {
     font-size: 23px;
 }
 
+.maxTemp {
+    color: rgba(173, 75, 68, 0.84);
+}
+
+.minTemp {
+     color: rgba(15, 42, 189, 0.79);
+}
+
 .noMargBottom {
     margin-bottom: 0;
 }
