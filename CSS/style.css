@@ -49,7 +49,7 @@ input[type='text'] {
 
 .forecastWeather {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     border-left: 2px solid black;
     padding-left: 17px;
     padding-right: 37px;

@@ -93,6 +93,7 @@ var showWeather = function(jsonData) {
         }
     weatherView.innerHTML = ''
 	forecastDiv.innerHTML = htmlString
+    forecastDiv.style = ''
     forecastDiv.style.border = "none"
     weatherView.style.display= "block"
     }
