@@ -63,12 +63,12 @@ var showWeather = function(jsonData) {
     todayDisplay.addEventListener("click", currentForecast)
     weeklyDisplay.addEventListener("click", weeklyView)
 
-    function weeklyView = function(obj) {
+    function weeklyView = function() {
         console.log(obj)
         var htmlString = ''
-        var arrayOfObj = obj.daily.data
+        var arrayOfObj = jsonData.daily.data
 
-        for (var i = 0; i<arrayOfObj.length - 1; i++){
+        for (var i = 0; i<arrayOfObj.length - 1; i++) {
             var day = arrayOfObj[i]
             var time = day.time
             time = time * 1000
