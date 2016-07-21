@@ -61,35 +61,36 @@ var showWeather = function(jsonData) {
         cityDiv.style.marginLeft= "30px"
     }
     todayDisplay.addEventListener("click", currentForecast)
-    weeklyDisplay.addEventListener("click", changeView)
+    weeklyDisplay.addEventListener("click", weeklyView)
+
+    function weeklyView = function(obj) {
+        console.log(obj)
+        var htmlString = ''
+        var arrayOfObj = obj.daily.data
+
+        for (var i = 0; i<arrayOfObj.length - 1; i++){
+            var day = arrayOfObj[i]
+            var time = day.time
+            time = time * 1000
+            var d = new Date(time);
+
+            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+            var date = weekday[d.getDay()]
+            htmlString += '<div class="weeklyBars"><h1 class="day">'+ date +'</h1> \
+               <h1 class="maxTemp">' + day.temperatureMax + '°</h1>\
+               <img src="images/' + day.icon + '.png"class="description">\
+               <h2 class="minTemp">' + day.temperatureMin + '°</h2>\
+                   </div>'
+        }
+	weatherInfo.innerHTML = htmlString
+    }
+
 }
 
 
 var citySearch = document.querySelector(".citySearch")
 citySearch.addEventListener('keydown',getQuery)
-
-var weeklyView = function (obj){
-	console.log(obj)
-	var htmlString = ''
-	var arrayOfObj = obj.daily.data
-
-	for (var i = 0; i<arrayOfObj.length - 1; i++){
-		var day = arrayOfObj[i]
-		var time = day.time
-		time = time * 1000
-		var d = new Date(time);
-
-		var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-
-		var date = weekday[d.getDay()]
-		htmlString += '<div class="weeklyBars"><h1 class="day">'+ date +'</h1> \
-					   <h1 class="maxTemp">' + day.temperatureMax + '°</h1>\
-                       <img src="images/' + day.icon + 'gif"class="description">\
-                       <h2 class="minTemp">' + day.temperatureMin + '°</h2>\
-					   </div>'
-	}
-	weatherInfo.innerHTML = htmlString
-}
 
 
 ViewConstructor = function(positionObject, viewHTML) {
