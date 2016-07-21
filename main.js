@@ -64,6 +64,7 @@ var showWeather = function(jsonData) {
         weatherView.style = ''
         forecastDiv.style = ''
         weatherView.style.marginLeft= "40px"
+        weatherView.style.marginRight= "22px"
     }
     todayDisplay.addEventListener("click", currentForecast)
     weeklyDisplay.addEventListener("click", weeklyView)

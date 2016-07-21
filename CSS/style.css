@@ -48,7 +48,7 @@ input[type='text'] {
     text-align: center;
     border-left: 2px solid black;
     padding-left: 17px;
-    padding-right: 17px;
+    padding-right: 37px;
 }
 
 .weather {
@@ -119,7 +119,7 @@ button {
     text-align: center;
     display: inline-block;
     margin-left: 55px;
-    margin-right: 22px;
+    margin-right: 19px;
 }
 
 .weather-info {
