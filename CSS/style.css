@@ -132,7 +132,7 @@ button {
 
 .weeklyBars {
     display: inline-block;
-    width: 160px;
+    min-width: 160px;
     vertical-align: middle;
 }
 
