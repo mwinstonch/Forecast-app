@@ -64,6 +64,7 @@ var showWeather = function(jsonData) {
             '</div>'
         weatherView.style = ''
         forecastDiv.style = ''
+        forecastDiv.style.paddingRight = "26px"
         weatherView.style.marginLeft= "40px"
         weatherView.style.marginRight= "22px"
     }
