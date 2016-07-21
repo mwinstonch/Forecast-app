@@ -83,7 +83,7 @@ var showWeather = function(jsonData) {
                <h2 class="minTemp">' + day.temperatureMin + '°</h2>\
                    </div>'
         }
-	weatherView.innerHTML = htmlString
+	forecastDiv.innerHTML = htmlString
     }
 
 }
