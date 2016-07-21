@@ -44,7 +44,8 @@ input[type='text'] {
 
 
 .forecastWeather {
-     display: inline-block;
+    display: inline-block;
+    text-align: center;
     border-left: 2px solid black;
     padding-left: 17px;
     padding-right: 17px;
