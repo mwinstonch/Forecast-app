@@ -6,7 +6,8 @@ body {
 }
 
 p {
-    line-height: 30px;
+    line-height: 26px;
+    font-size: 19px;
 }
 .city {
     font-size: 31px;
