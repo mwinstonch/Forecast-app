@@ -64,7 +64,7 @@ var showWeather = function(jsonData) {
     weeklyDisplay.addEventListener("click", weeklyView)
 
     function weeklyView () {
-        console.log(obj)
+        console.log(jsonData)
         var htmlString = ''
         var arrayOfObj = jsonData.daily.data
 
