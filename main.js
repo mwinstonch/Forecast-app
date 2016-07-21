@@ -37,7 +37,6 @@ var showWeather = function(jsonData) {
     var today = day.getDay()
     var weatherView = document.querySelector(".weatherView")
     var forecastDiv = document.querySelector(".forecastWeather")
-    weatherView.style.marginLeft= "55px"
     forecastDiv.innerHTML = ''
     weatherView.innerHTML = ''
     weatherView.innerHTML = '<div class=""><h1 class="currentTemp">' + parseInt(jsonData.currently.temperature) + '&deg;F</h1>\
@@ -83,7 +82,7 @@ var showWeather = function(jsonData) {
                <h2 class="minTemp">' + day.temperatureMin + '°</h2>\
                    </div>'
         }
-	weatherInfo.innerHTML = htmlString
+	weatherView.innerHTML = htmlString
     }
 
 }
