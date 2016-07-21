@@ -124,9 +124,6 @@ var todayView = function(obj) {
   weatherInfo.innerHTML = htmlString
 }
 
-var today = new ViewConstructor(weatherInfo, todayView)
-var weekly = new ViewConstructor(weatherInfo, weeklyView)
-var hourly = new ViewConstructor(weatherInfo, hourly)
 
 var controller = function () {
 
