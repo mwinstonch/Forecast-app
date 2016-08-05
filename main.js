@@ -81,9 +81,7 @@ var showWeather = function(jsonData) {
             var time = day.time
             time = time * 1000
             var d = new Date(time);
-
             var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-
             var date = weekday[d.getDay()]
             htmlString += '<div class="weeklyBars"><h1 class="day">'+ date +'</h1> \
                <h1 class="maxTemp">' + day.temperatureMax + '°</h1>\
