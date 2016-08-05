@@ -140,7 +140,6 @@ var controller = function () {
 	if(location.hash === ''){
       window.location.hash = "Houston, TX"
 	}
-
 	else {
       console.log("controller working")
       var newQuery = location.hash.substring(1)
@@ -164,8 +163,6 @@ var controller = function () {
 var changeView = function(event) {
 }
 
-
 window.addEventListener("hashchange", controller)
-
 
 controller()
